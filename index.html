@@ -1,15 +1,257 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
+<link rel="stylesheet" href="css/generel.css">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Eksamen</title>
+    <title>Index</title>
 </head>
 
 <body>
+    <header>
+        <nav class="menu-bar">
+            <div class="menu-left">
+                <a href="index.html"><img src="img/logo.svg" alt=""></a>
+            </div>
 
+            <div class="about-me">
+                <a href="aboutme.html">Diego.</a>
+            </div>
+
+            <div class="menu-right">
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-sektion">
+            <div class="video-wrapper">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/9bfba4c4-4ac0-4f63-8099-a3c1cdad4142/wx4ydjpH3R.lottie"
+                    background="transparent" speed="1" class="responsiv-animation" autoplay></dotlottie-player>
+            </div>
+            <div class="hero-link-wrapper">
+                <div class="hero-link">
+                    <a href="https://www.instagram.com/lord_denckert/"><img src="img/ig-logo.svg"
+                            alt="Et instagram logo"></a>
+                    <a href="https://www.facebook.com/diego.denckert"><img src="img/facebook-logo.svg"
+                            alt="Et facebook logo"></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="community-h1">
+            <h1>Fællesskaber jeg er med i</h1>
+        </div>
+
+        <section class="community-section">
+
+
+            <div class="dialog-card">
+                <div class="image-container">
+                    <div class="dialog-image"><img src="img/sigurdsgade.webp" alt="Et billede af sigurdsgade">
+                        <button class="cta_btn" onclick="openDialog('sigurdDialog')">Se mere</button>
+                    </div>
+
+                    <dialog id="sigurdDialog">
+                        <article>
+                            <h2>Sigurdsgade</h2>
+                            <img src="img/sigurdsgade-dialog-img.webp" alt="En Sigurdsgade plakat">
+                            <p>Natten på Sigurdsgade er mere end bare en arbejdsplads for mig - det er et levende,
+                                kærligt community hvor alle har en plads. Som bartender i en af gades mest ikoniske
+                                natklubber er jeg ikke bare drinksmester, men også en del af det usynlige netværk
+                                der holder kvarterets sjæl i live.
+
+                                Her bag baren ser jeg hver aften hvordan Sigurdsgades unikke ånd kommer til udtryk.
+                                De samme ansigter der hilser som venner, de nysgerrige sjæle der bliver taget under
+                                vinger, og den utrolige måde hvorpå musikken, latteren og samtalerne væver os alle
+                                sammen ind i et fællesskab. Det er her, mellem de blinkende bardisklys og under
+                                loftets dunkende bas, at magien sker.
+
+                                Jeg elsker at være den der husker folks yndlingsdrinks, men endnu mere at være den
+                                der husker deres historier. For mig handler det om at skabe et sted hvor alle føler
+                                sig velkomne - et lille hjørne af byen hvor vi sammen kan skabe de mest utrolige
+                                natteminder. Sigurdsgade er ikke bare en gade, det er et hjem for dem der søger det
+                                rigtige mix af fest, venskab og autentisk bykultur.
+
+                                Hver aften er en ny chance for at styrke båndene i vores lille, skøre nattelige
+                                familie - én drink og én smil ad gangen.</p>
+                            <a href="https://sigurdcph.com">Se mere</a>
+                            <button onclick="closeDialog('sigurdDialog')" autofocus>Luk</button>
+                        </article>
+                    </dialog>
+                </div>
+
+
+                <div class="image-container">
+                    <div class="dialog-image"><img src="img/lagune.webp" alt="Et billede af Lagune">
+                        <button class="cta_btn" onclick="openDialog('laguneDialog')">Se mere</button>
+                    </div>
+
+                    <dialog id="laguneDialog">
+                        <article>
+                            <h2>Lagune</h2>
+                            <img src="img/lagune-dialog-img.webp" alt="Et billede inde i butikken Lagune">
+                            <p>At arbejde for Lagune Copenhagen er mere end bare et job i tøjbranchen - det er
+                                at være en del af en passioneret gruppe mennesker, der sammen skaber noget
+                                unikt. I butikkens hyggelige rum møder jeg hver dag både stamkunder og nye
+                                ansigter, og det er netop disse menneskelige forbindelser, der gør det så
+                                specielt.
+
+                                Laguna er ikke bare en tøjbutik, men et kreativt knudepunkt hvor stil,
+                                personlighed og fællesskab mødes. Jeg elsker at hjælpe kunder med at finde deres
+                                unikke udtryk, mens vi snakker om alt fra musik til byens seneste begivenheder.
+                                Her bliver shopping til en oplevelse - en undskyldning for at connecte,
+                                inspirere og blive inspireret.
+
+                                Det er et sted, hvor kolleger bliver til venner, og kunder bliver en del af
+                                Lagunas store familie. Om det er at diskutere nye designs, give stylingråd eller
+                                bare udveksle et smil, så handler det altid om at skabe et rum hvor alle føler
+                                sig velkomne. For mig er Laguna først og fremmest et community - et sted hvor vi
+                                sammen skriver historien om, hvad dansk streetwear kan være.
+
+                                Hver dag er en ny chance for at styrke båndene i vores fællesskab - ét stykke
+                                tøj og én god samtale ad gangen.</p>
+                            <a href="https://lagunecph.com">Se mere</a>
+                            <button onclick="closeDialog('laguneDialog')" autofocus>Luk</button>
+                        </article>
+                    </dialog>
+                </div>
+
+                <div class="image-container">
+                    <div class="dialog-image"><img src="img/hakami.webp" alt="Et billede af Lagune">
+                        <button class="cta_btn" onclick="openDialog('hakamiDialog')">Se mere</button>
+                    </div>
+
+                    <dialog id="hakamiDialog">
+                        <article>
+                            <h2>Lagune</h2>
+                            <img src="img/hakami-dialog-img.webp" alt="Et billede af et Hakami medlem">
+                            <p>At arbejde for Lagune Copenhagen er mere end bare et job i tøjbranchen - det er
+                                at være en del af en passioneret gruppe mennesker, der sammen skaber noget
+                                unikt. I butikkens hyggelige rum møder jeg hver dag både stamkunder og nye
+                                ansigter, og det er netop disse menneskelige forbindelser, der gør det så
+                                specielt.
+
+                                Laguna er ikke bare en tøjbutik, men et kreativt knudepunkt hvor stil,
+                                personlighed og fællesskab mødes. Jeg elsker at hjælpe kunder med at finde deres
+                                unikke udtryk, mens vi snakker om alt fra musik til byens seneste begivenheder.
+                                Her bliver shopping til en oplevelse - en undskyldning for at connecte,
+                                inspirere og blive inspireret.
+
+                                Det er et sted, hvor kolleger bliver til venner, og kunder bliver en del af
+                                Lagunas store familie. Om det er at diskutere nye designs, give stylingråd eller
+                                bare udveksle et smil, så handler det altid om at skabe et rum hvor alle føler
+                                sig velkomne. For mig er Laguna først og fremmest et community - et sted hvor vi
+                                sammen skriver historien om, hvad dansk streetwear kan være.
+
+                                Hver dag er en ny chance for at styrke båndene i vores fællesskab - ét stykke
+                                tøj og én god samtale ad gangen.</p>
+                            <a href="">Se mere</a>
+                            <button onclick="closeDialog('hakamiDialog')" autofocus>Luk</button>
+                        </article>
+                    </dialog>
+                </div>
+            </div>
+        </section>
+
+        <div class="erfaring">
+            <h1>Erfaring med</h1>
+        </div>
+        <section class="erfaring-med">
+            <div class="vss-erfaring">
+                <div class="image-wrapper">
+                    <img src="img/vss-logo.svg" alt="Et logo af visual studio 
+                code">
+                </div>
+                <div class="text-wrapper">
+                    <p>I løbet af 1. semester har jeg arbejdet med Visual Studio Code som mit primære kodeværktøj. Her
+                        har jeg lært at skrive og strukturere kode i HTML, CSS og JavaScript, og jeg har opnået en
+                        grundlæggende forståelse for, hvordan man bygger og styler simple webapplikationer.</p>
+                </div>
+            </div>
+            <div class="figma-erfaring">
+                <div class="image-wrapper">
+                    <img src="img/figma-logo.svg" alt="Et logo af Figma">
+                </div>
+                <div class="text-wrapper">
+                    <p>Jeg har brugt Figma i 1. semester til at lave wireframes, mockups og prototyper. Gennem arbejdet
+                        med Figma har jeg fået en grundlæggende forståelse for brugergrænseflader, layout, og hvordan
+                        man visualiserer designidéer på en overskuelig og præsentabel måde.</p>
+                </div>
+            </div>
+            <div class="adobe-erfaring">
+                <div class="image-wrapper">
+                    <img src="img/adobe-logo.svg" alt="Et logo af Adobe">
+                </div>
+                <div class="text-wrapper">
+                    <p>I løbet af 1. semester har jeg også arbejdet med Adobe-pakken, særligt Photoshop, Illustrator og
+                        After Effects. I Photoshop har jeg redigeret billeder og arbejdet med grafisk layout, mens jeg i
+                        Illustrator har lavet vektorgrafik og logoer. Med After Effects har jeg fået introduktion til
+                        motion design og arbejdet med simple animationer og visuelle effekter til digitale produktioner.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="projekter">
+            <h1>Vil du se mine tidligere projekter?</h1>
+        </div>
+
+        <div class="projekter-link">
+            <a href="portfolio.html"><img src="img/tidligere-projekter.webp"
+                    alt="Et billede af en person med motercykel hjelm på"></a>
+        </div>
+
+        <div class="udtalelser">
+            <h1>Andre ku sige om mig</h1>
+        </div>
+
+        <section class="scroll-wheel">
+            <nav class="scroll-nav">
+                <button class="scroll-btn up">↑</button>
+
+                <div class="scroll-menu-container">
+                    <div class="scroll-item">
+                        <div class="scroll-content">
+                            <div class="pic-wrapper">
+                                <img src="img/kasra.webp" alt="Et billede af kasra Hakami">
+                            </div>
+                            <p>“Diego er en guttermand uden nåde. Den bedste ven man kunne ønske sig - jeg ville ærligt
+                                ønske
+                                jeg var mere som ham”</p>
+                        </div>
+                    </div>
+
+
+                    <div class="scroll-item">
+                        <div class="scroll-content">
+                            <div class="pic-wrapper">
+                                <img src="img/mati.webp" alt="Et billede af Mathæus Ayob Arya">
+                            </div>
+                            <p>“Jeg kan kun beskrive Diego med 3 ord: flot, troværdig og forbillede”</p>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="scroll-content">
+                            <div class="pic-wrapper">
+                                <img class="easter-egg" src="img/chris.webp"
+                                    alt="Et billede af Christopher Sonnerup Nyborgs">
+                            </div>
+                            <p>“Første gang jeg mødte DixiePoo ude på agurke-markerne, så vidste jeg han var et særligt
+                                menneske”</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-btn down">↓</button>
+            </nav>
+        </section>
+
+    </main>
+    <script src="js/js.js"></script>
 </body>
+
 
 </html>
