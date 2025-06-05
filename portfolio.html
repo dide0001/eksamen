@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/portfolio.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="menu-left">
+                <a href="index.html"><img src="img/logo.svg" alt=""></a>
+            </div>
+
+            <div class="about-me">
+                <a href="aboutme.html">Diego.</a>
+            </div>
+
+            <div class="menu-right">
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-img">
+                <img src="img/hero-portfolio.png"
+                    alt="Et billede af en person med motercykel hjelm og teksten Diego Denckert">
+                <button class="scroll-btn" onclick="scrollToSection()">
+                    <img src="img/scrolld-down.svg" alt="Et billede af en pil ned ad">
+                </button>
+            </div>
+        </section>
+
+        <div class="projekter" id="portfolio">
+            <h2>Tidligere projekter</h2>
+        </div>
+
+        <section class="portfolio-section">
+            <div class="dialog-card">
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/bmg-card.png" alt="Et billede af be my guest logo">
+                            <img class="overlay-pic" src="img/bmg-logo.png" alt="Be my guest logo">
+                            <h3>Grundlæggende web</h3>
+                            <button class="cta_btn" onclick="openDialog('bemyguestDialog')">Se mere</button>
+                        </div>
+                    </div>
+                    <dialog id="bemyguestDialog">
+                        <article>
+                            <h2>Sigurdsgade</h2>
+                            <img src="img/sigurdsgade-dialog-img.webp" alt="En Sigurdsgade plakat">
+                            <p>HER SKAL DER LAVES OM BEMYGUEST</p>
+                            <a href="https://sigurdcph.com">Se mere</a>
+                            <button onclick="closeDialog('bemyguestDialog')" autofocus>Luk</button>
+                        </article>
+                    </dialog>
+                </div>
+
+
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/sure-sokker-card.png" alt="Et billede af Lagune">
+                            <h3>grundlæggende web</h3>
+                            <button class="cta_btn" onclick="openDialog('sokkeDialog')">Se mere</button>
+                        </div>
+                    </div>
+
+                    <dialog id="sokkeDialog">
+                        <article>
+                            <h2>Lagune</h2>
+                            <img src="img/lagune-dialog-img.webp" alt="Et billede inde i butikken Lagune">
+                            <p>Her skal der stå om sure sokker-site!!</p>
+                            <a href="https://lagunecph.com">Se mere</a>
+                            <button onclick="closeDialog('sokkeDialog')" autofocus>Luk</button>
+                        </article>
+                    </dialog>
+                </div>
+
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/cykel-card.svg " alt="Et billede af Lagune">
+                            <h3>Emergency</h3>
+                            <button class="cta_btn" onclick="openDialog('cykelDialog')">Se mere</button>
+                        </div>
+                    </div>
+
+                    <dialog id="cykelDialog">
+                        <article>
+                            <h2>Lagune</h2>
+                            <img src="img/hakami-dialog-img.webp" alt="Et billede af et Hakami medlem">
+                            <p>HER SKAL STÅ OM NØRREBRO-GUIDEN!</p>
+                            <a href="">Se mere</a>
+                            <button onclick="closeDialog('cykelDialog')" autofocus>Luk</button>
+                        </article>
+                    </dialog>
+                </div>
+
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/introuge-card.png" alt="Et billede af Lagune">
+                            <h3>Intro uge</h3>
+                            <button class="cta_btn" onclick="openDialog('introDialog')">Se mere</button>
+                        </div>
+                    </div>
+
+                    <dialog id="introDialog">
+                        <article>
+                            <h2>Lagune</h2>
+                            <img src="img/hakami-dialog-img.webp" alt="Et billede af et Hakami medlem">
+                            <p>HER SKAL STÅ OM NØRREBRO-GUIDEN!</p>
+                            <a href="">Se mere</a>
+                            <button onclick="closeDialog('introDialog')" autofocus>Luk</button>
+                        </article>
+                    </dialog>
+                </div>
+
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/emnesite-card.png" alt="Et billede af Lagune">
+                            <h3>Emnesite</h3>
+                            <button class="cta_btn" onclick="openDialog('emneDialog')">Se mere</button>
+                        </div>
+                    </div>
+
+                    <dialog id="emneDialog">
+                        <article>
+                            <h2>Lagune</h2>
+                            <img src="img/hakami-dialog-img.webp" alt="Et billede af et Hakami medlem">
+                            <p>HER SKAL STÅ OM NØRREBRO-GUIDEN!</p>
+                            <a href="">Se mere</a>
+                            <button onclick="closeDialog('emneDialog')" autofocus>Luk</button>
+                        </article>
+                    </dialog>
+                </div>
+
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/test-card.png" alt="Et billede af Lagune">
+                            <h3>Studiestartsprøve
+                            </h3>
+                            <button class="cta_btn" onclick="openDialog('testDialog')">Se mere</button>
+                        </div>
+                    </div>
+
+                    <dialog id="testDialog">
+                        <article>
+                            <h2>Lagune</h2>
+                            <img src="img/hakami-dialog-img.webp" alt="Et billede af et Hakami medlem">
+                            <p>HER SKAL STÅ OM NØRREBRO-GUIDEN!</p>
+                            <a href="">Se mere</a>
+                            <button onclick="closeDialog('testDialog')" autofocus>Luk</button>
+                        </article>
+                    </dialog>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="js/portfolio.js"></script>
+</body>
+
+
+</html>
