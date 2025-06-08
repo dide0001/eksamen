@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="menu-left">
+                <a href="index.html"><img src="img/logo.svg" alt=""></a>
+            </div>
+
+            <div class="about-me">
+                <a href="aboutme.html">Diego.</a>
+            </div>
+
+            <div class="menu-right">
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-img">
+                <img src="img/hero-portfolio.png"
+                    alt="Et billede af en person med motercykel hjelm og teksten Diego Denckert">
+                <button class="scroll-btn" onclick="scrollToSection()">
+                    <img src="img/scrolld-down.svg" alt="Et billede af en pil ned ad">
+                </button>
+            </div>
+        </section>
+
+        <div class="projekter" id="portfolio">
+            <h2>Tidligere projekter</h2>
+        </div>
+
+        <section class="portfolio-section">
+            <div class="dialog-card">
+
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/bmg-card.png" alt="Et billede af be my guest logo">
+                            <img class="overlay-pic" src="img/bmg-logo.png" alt="Be my guest logo">
+                            <h3>Grundlæggende web</h3>
+                            <button class="cta_btn" onclick="openDialog('bemyguestDialog')">Se mere</button>
+                        </div>
+                    </div>
+                    <dialog id="bemyguestDialog">
+                        <article>
+                            <h2>BeMyGuest</h2>
+                            <img src="img/bmg-dialog-card.webp" alt="En Sigurdsgade plakat">
+                            <p>I tema 5 skulle vi i gruppearbejde lave et redesign af en virksomheds hjemmeside for
+                                første gang. Vi lærte både om gruppearbejde og om SCRUM, en metode til at fordele
+                                opgaver og følge hinandens fremskridt undervejs. Et vigtigt mål var også at kommunikere
+                                effektivt med virksomheden for at skabe et design, der lever op til deres ønsker. Vi
+                                startede med at analysere den eksisterende hjemmeside for at finde styrker og svagheder,
+                                hvorefter vi udviklede wireframes og mockups, som vi præsenterede for virksomheden og
+                                fik feedback på. Gennem projektet blev vi bevidste om at tilpasse designet til både
+                                brugerens behov og virksomhedens krav. Det gav os værdifuld erfaring med teamwork,
+                                projektstyring og professionelle designprocesser, og vi lærte at levere et færdigt
+                                produkt til en kunde.</p>
+                            <div class="cta-wrapper">
+                                <a href="https://diegodenckert.dk/Tema-5-bemyguest/index.html" target="_blank">Se
+                                    mere</a>
+                                <button onclick="closeDialog('bemyguestDialog')" autofocus>Luk</button>
+                            </div>
+                        </article>
+                    </dialog>
+                </div>
+
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/sure-sokker-card.png" alt="Et billede af Lagune">
+                            <h3>grundlæggende web</h3>
+                            <button class="cta_btn" onclick="openDialog('sokkeDialog')">Se mere</button>
+                        </div>
+                    </div>
+                    <dialog id="sokkeDialog">
+                        <article>
+                            <h2>Sure sokker</h2>
+                            <img src="img/sure-sokker-dialog.webp" alt="Et billede af forsiden på mit sure sokker site">
+                            <p>Første projekt på tema 5 var at udvikle en hjemmeside om et valgfrit emne, hvor der
+                                skulle indgå en lottie-animation, som vi skabte i After Effects. Vi lærte at eksportere
+                                animationen korrekt og integrere den i hjemmesiden for at skabe et levende og
+                                interaktivt visuelt element. Projektet gav os indsigt i, hvordan man kombinerer grafisk
+                                design med webudvikling, og hvordan animationer kan forbedre brugeroplevelsen. Undervejs
+                                fik vi også træning i at strukturere og style hjemmesiden med HTML og CSS for at sikre
+                                et professionelt resultat. Det var en god øvelse i at arbejde kreativt med både design
+                                og teknik.</p>
+                            <div class="cta-wrapper">
+                                <a href="https://diegodenckert.dk/Tema-5-sokke-site/" target="_blank">Se mere</a>
+                                <button onclick="closeDialog('sokkeDialog')">Luk</button>
+                            </div>
+                        </article>
+                    </dialog>
+                </div>
+
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/cykel-card.svg" alt="Et billede af Lagune">
+                            <h3>Emergency</h3>
+                            <button class="cta_btn" onclick="openDialog('cykelDialog')">Se mere</button>
+                        </div>
+                    </div>
+                    <dialog id="cykelDialog">
+                        <article>
+                            <h2>Emergency-site</h2>
+                            <img src="img/cykel-dialog-article.webp" alt="Et billede af Nørrebro-guiden">
+                            <p>På 4. tema arbejdede vi med “Emergency”-sitet, hvor vi skulle vælge et valgfrit emne
+                                relateret til dommedag. Her blev vi introduceret til JavaScript som et værktøj til at
+                                skabe interaktive elementer på siden. Vi lærte, hvordan JavaScript kan forbedre både
+                                funktionaliteten og designet af en hjemmeside ved at gøre brugeroplevelsen mere dynamisk
+                                og engagerende. Det gav os en grundlæggende forståelse for, hvordan man kombinerer HTML,
+                                CSS og JavaScript til at bygge moderne websites. Projektet var en vigtig introduktion
+                                til programmeringens rolle i webudvikling.</p>
+                            <div class="cta-wrapper">
+                                <a href="https://diegodenckert.dk/Tema-4/index.html" target="_blank">Se mere</a>
+                                <button onclick="closeDialog('cykelDialog')">Luk</button>
+                            </div>
+                        </article>
+                    </dialog>
+                </div>
+
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/introuge-card.png" alt="Et billede af Lagune">
+                            <h3>Intro uge</h3>
+                            <button class="cta_btn" onclick="openDialog('introDialog')">Se mere</button>
+                        </div>
+                    </div>
+                    <dialog id="introDialog">
+                        <article>
+                            <h2>Intro-ugen</h2>
+                            <img src="img/intro-uge-article.webp" alt="Et billede af Moonlit-mega-disco">
+                            <p>I intro-ugen dannede vi gruppen Moon-lit-mega-disco og lavede en sit-com-intro, hvor vi
+                                dansede rundt forskellige steder på KEA. Vi valgte at efterligne stilen fra en klassisk
+                                90’er-intro for at præsentere os selv på en humoristisk og kreativ måde. Det var en sjov
+                                måde at lære hinanden at kende på, og samtidig gav det os en fælles oplevelse, der
+                                styrkede sammenholdet fra starten. Ved at se hinandens introer fik vi hurtigt en
+                                fornemmelse af, hvem vi var kommet i klasse med – både personligt og kreativt.</p>
+                            <div class="cta-wrapper">
+                                <a href="https://drive.google.com/drive/folders/1uGE2ug09WAjBqNu0G4YgMZaHyVwGlYRS?fbclid=IwY2xjawKw5vhleHRuA2FlbQIxMQABHpBl4lMkvywMLqSYrYEQLldlJNaJXcfb3AGKmT12NaAVPL9vXc4tubK7SY43_aem_ye99qdrSqpmKUKwcKiOaKw"
+                                    target="_blank">Se
+                                    mere</a>
+                                <button onclick="closeDialog('introDialog')">Luk</button>
+                            </div>
+                        </article>
+                    </dialog>
+                </div>
+
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/emnesite-card.png" alt="Et billede af Lagune">
+                            <h3>Emnesite</h3>
+                            <button class="cta_btn" onclick="openDialog('emneDialog')">Se mere</button>
+                        </div>
+                    </div>
+                    <dialog id="emneDialog">
+                        <article>
+                            <h2>Emnesite</h2>
+                            <img src="img/emnesite-article.webp" alt="Et billede af emnesite">
+                            <p>På tema 3 skulle vi udvikle et “emnesite”, hvor vi selv valgte et emne og byggede en
+                                hjemmeside omkring det. Vi arbejdede med hele designprocessen – fra idé og
+                                konceptudvikling til visuelle overvejelser som moodboards, designassociationer og
+                                brugertests. Gennem dette lærte vi, hvor vigtigt det er at planlægge og teste designet,
+                                før man bygger det. Derudover trak vi på den viden, vi havde opnået under
+                                studiestartsprøven, og arbejdede selvstændigt med at opbygge strukturen i HTML ved hjælp
+                                af bl.a. grids, flexbox og CSS. Projektet gav os en god forståelse for både design og
+                                teknisk opbygning af en funktionel og æstetisk hjemmeside.</p>
+                            <div class="cta-wrapper">
+                                <a href="https://diegodenckert.dk/Tema-3/index.html" target="_blank">Se mere</a>
+                                <button onclick="closeDialog('emneDialog')">Luk</button>
+                            </div>
+                        </article>
+                    </dialog>
+                </div>
+
+                <div class="image-container">
+                    <div class="card-section">
+                        <div class="dialog-image"><img src="img/test-card.png" alt="Et billede af Lagune">
+                            <h3>Studiestartsprøve
+                            </h3>
+                            <button class="cta_btn" onclick="openDialog('testDialog')">Se mere</button>
+                        </div>
+                    </div>
+                    <dialog id="testDialog">
+                        <article>
+                            <h2>Lagune</h2>
+                            <img src="img/test-article.webp" alt="Et billede af studiestartsprøve">
+                            <p>På tema 2 skulle vi bestå en studiestartsprøve, som fungerede som en grundlæggende test i
+                                HTML og CSS. Opgaven gik ud på at opbygge en hjemmeside ud fra en udleveret wireframe og
+                                style den korrekt. Vi arbejdede med at strukturere siden med grids og flexbox, og lærte
+                                hvordan de bruges til at skabe responsive layouts. Gennem dette fik vi en introduktion
+                                til, hvordan man omsætter et designkoncept til en funktionel hjemmeside med korrekt
+                                semantisk opbygning. Det gav en god forståelse for webudviklingens fundament og lagde
+                                grunden for resten af semestret.</p>
+                            <div class="cta-wrapper">
+                                <a href="https://diegodenckert.dk/Tema-2/index.html" target="_blank">Se mere</a>
+                                <button onclick="closeDialog('testDialog')">Luk</button>
+                            </div>
+                        </article>
+                    </dialog>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>
