@@ -109,19 +109,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* easter egg funktion */
 document.addEventListener('DOMContentLoaded', () => {
-    const chrisImage = document.querySelector('.easter-egg');
+  const chrisImage = document.querySelector('.easter-egg');
 
-    if (chrisImage) {
-        const originalSrc = 'chris.webp';
-        const newSrc = 'toddi.webp';
-
-        chrisImage.addEventListener('click', () => {
-            const currentFile = new URL(chrisImage.src).pathname.split('/').pop();
-            chrisImage.src = currentFile === originalSrc ? newSrc : originalSrc;
-        });
-    }
+  if (chrisImage) {
+    const originalSrc = 'chris.webp';
+    const newSrc = 'toddi.webp';
+    
+    chrisImage.addEventListener('click', () => {
+        const currentFile = new URL(chrisImage.src).pathname.split('/').pop();
+        chrisImage.src = currentFile === originalSrc ? `img/${newSrc}` : `img/${originalSrc}`;
+    });
+  }
 });
-
 
 
 
