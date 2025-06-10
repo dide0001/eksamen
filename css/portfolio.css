@@ -401,8 +401,4 @@ dialog article img {
   transition: filter 0.4s ease, transform 0.4s ease;
 }
 
-.projekter-link img:hover,
-.projekter-link:hover img {
-  filter: grayscale(0%);
-  transform: scale(1.06);
-}
+
