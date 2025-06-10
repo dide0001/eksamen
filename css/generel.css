@@ -6,8 +6,24 @@ body{
     margin-left: 5rem;
     margin-right: 5rem;
     font-family: 'Clash Display', sans-serif;
+    max-width: 1580px;
   }
   
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+.Diego{
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+a{
+  text-decoration: none;
+}
   img{
     max-width: 100%;
     height: auto;
@@ -119,8 +135,6 @@ body{
   }
   
   /* udtalelser */
-  /* udtalelser */
-  
   .udtalelser{
     text-align: center;
   }
@@ -203,10 +217,12 @@ body{
   }
   
   .scroll-btn:hover {
-  background-color: #5a453a;
+  background-color: black;
   }
-  
-  
+
+
+
+
   @media (min-width: 769px){
   /* Meny */
   .menu-bar {
@@ -219,7 +235,7 @@ body{
     margin-right: 10rem;
   }
   
-  .menu-bar a{
+a{
     text-decoration: none;;
   }
   
@@ -306,14 +322,14 @@ body{
   }
   
 
-  /* Billedet i kortet */
+  
   .dialog-image img {
     aspect-ratio: 1/1;
     object-fit: cover;
     margin-bottom: 15px;
   }
   
-  /* Knappen under billedet */
+  
   .cta_btn {
     position: absolute;
   bottom: 40px;
@@ -328,10 +344,12 @@ body{
   font-weight: 600;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 8px black;
-  
   }
   
-  /* Sikrer at dialog-indholdet er læsbart */
+  .cta_btn:hover {
+    box-shadow: 0 4px 8px rgba(145, 164, 255, 0.3); 
+  }
+
   dialog article {
     background-color: #ffffff;
     border-radius: 12px;
@@ -512,6 +530,18 @@ body{
     margin-top: 20vh;
   }
   
+  /*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  flex-direction: row;
+}
+
+.footer-center{
+  padding-right: 10rem;
+}
   
   }
   /* responsiv-site */
@@ -601,14 +631,14 @@ body{
         position: relative;
      }
      
-     /* Billedet i kortet */
+     
      .dialog-image img {
          aspect-ratio: 1/1;
          object-fit: cover;
          margin-bottom: 15px;
      }
      
-     /* Knappen under billedet */
+     
      .cta_btn {
         position: absolute;
         bottom: 3rem;
@@ -625,7 +655,7 @@ body{
      
      }
      
-     /* Sikrer at dialog-indholdet er læsbart */
+   
      dialog article {
          padding: 1rem;
          max-width: 500px;
@@ -638,7 +668,7 @@ body{
          margin: 1rem 0;
      }
   
-     /* erfaring med sektion */
+     
      .erfaring-med{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr ;
@@ -683,4 +713,183 @@ body{
         text-align: center;
         margin-top: 20vh;
     }
+
+    .footer {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
   }
+ 
+
+  /* presentation sektion */
+  .presentation-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 768px;
+  }
+
+  /* chat gpt animationer*/
+@keyframes dialogOpen {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes dialogClose {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.8);
+  }
+}
+
+dialog:not(.closing) article {
+  animation: dialogOpen 0.4s ease forwards;
+}
+
+dialog.closing article {
+  animation: dialogClose 0.3s ease forwards;
+}
+
+@keyframes backdropFadeIn {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+  }
+}
+
+@keyframes backdropFadeOut {
+  from {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0);
+  }
+}
+
+dialog:not(.closing)::backdrop {
+  animation: backdropFadeIn 0.4s ease forwards;
+}
+
+dialog.closing::backdrop {
+  animation: backdropFadeOut 0.3s ease forwards;
+}
+
+dialog article {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  color: #333;
+  overflow-y: auto;
+  max-width: 600px;
+  width: 50vw;
+  height: 75vh;
+}
+
+dialog article .cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+dialog article .cta-wrapper button {
+  align-self: center;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+dialog article h2 {
+  font-size: 1.8rem;
+  color: #0032ff;
+  margin-top: 0;
+}
+
+dialog article p {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+dialog article a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0032ff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+dialog article button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #0032ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+dialog article button:hover {
+  background-color: #0022cc;
+}
+
+dialog article img {
+  max-width: 100%;
+  width: 75%;
+  height: auto;
+  margin: 1.5rem auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.udtalser img {
+  filter: grayscale(100%);
+  transition: filter 0.4s ease, transform 0.4s ease;
+  cursor: pointer;
+  display: block;
+  border-radius: 8px;
+}
+
+.udtalser img:hover,
+.udtalser img:focus {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  outline: none;
+}
+
+.projekter-link img {
+  filter: grayscale(100%);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.projekter-link img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.06);
+}

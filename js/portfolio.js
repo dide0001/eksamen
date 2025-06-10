@@ -1,16 +1,16 @@
 function openDialog(id) {
     const dialog = document.getElementById(id);
-    
-    
+
     dialog.classList.remove('closing');
-    
-    
+
     dialog.showModal();
-    
-    
-    dialog.scrollTop = 0;
-    
-    
+
+    // Scroll til toppen af dialogens artikelindhold
+    const article = dialog.querySelector('article');
+    if (article) {
+        article.scrollTop = 0;
+    }
+
     dialog.focus();
 }
 
@@ -27,7 +27,6 @@ function closeDialog(dialogId) {
         dialog.classList.remove('closing');
     }, 300); 
 }
-
 function scrollToSection() {
     document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
 }
