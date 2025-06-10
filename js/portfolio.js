@@ -5,7 +5,7 @@ function openDialog(id) {
 
     dialog.showModal();
 
-    // Scroll til toppen af dialogens artikelindhold 
+    /* Scroll til toppen af dialogens artikelindhold */
     const article = dialog.querySelector('article');
     if (article) {
         article.scrollTop = 0;
